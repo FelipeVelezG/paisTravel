@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FDFCFC"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="#0541F4"
+        android:gravity="center"
+        android:text="Agencia De Turismo Paisa-Travel" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="135dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="Nombre" />
+
+        <EditText
+            android:id="@+id/etnombre"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="65dp"
+            android:inputType="textPersonName"
+
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="135dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="Destino" />
+
+        <Spinner
+            android:id="@+id/spdestino"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="65dp"
+            android:gravity="center"
+
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="135dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="Fecha Salida" />
+
+        <EditText
+            android:id="@+id/etfechaSalida"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="65dp"
+            android:gravity="center"
+            android:inputType="textPersonName" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="135dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="Numero De Personas" />
+
+        <EditText
+            android:id="@+id/etnumeroPersonas"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="65dp"
+            android:gravity="center"
+            android:inputType="textPersonName" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="135dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="Numero De Días" />
+
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="70dp"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/rb2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="2"
+
+                />
+
+            <RadioButton
+                android:id="@+id/rb4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="4" />
+
+            <RadioButton
+                android:id="@+id/rb6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="6" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:layout_width="135dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="Adicionales" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:orientation="vertical">
+
+            <Switch
+                android:id="@+id/swtourDias"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="70dp"
+                android:layout_marginTop="20dp"
+                android:text="Tour Por Días"
+                tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+            <Switch
+                android:id="@+id/swdiscoteca"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="70dp"
+                android:layout_marginBottom="20dp"
+                android:text="Discoteca"
+
+                tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="135dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="Total a Pagar" />
+
+        <TextView
+            android:id="@+id/tvtotalPagar"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="60dp"
+            android:text="_______________________" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btncalc"
+            android:layout_width="190dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="5dp"
+            android:background="@color/purple_700"
+            android:text="Calcular"
+            android:textSize="12dp" />
+
+        <Button
+            android:id="@+id/btnclear"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="5dp"
+            android:text="Limpiar Información"
+            android:textSize="12dp" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
